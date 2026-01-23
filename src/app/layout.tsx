@@ -38,7 +38,7 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <ChatWidget orgId={process.env.NEXT_PUBLIC_PANDY_ORG_ID || ''} />
+        <ChatWidget />
       </body>
     </html>
   );

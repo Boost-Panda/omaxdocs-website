@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js 14 (App Router) website for "Hala" - an oral & maxillofacial surgery practice (Associated Oral & Maxillofacial Surgeons). The site uses TypeScript, Tailwind CSS, and shadcn/ui components.
+This is a Next.js 14 (App Router) website built by **Hala** for their client **Associated Oral & Maxillofacial Surgeons (AOMS)** - an oral & maxillofacial surgery practice. The site uses TypeScript, Tailwind CSS, and shadcn/ui components.
 
 ## Development Commands
 
