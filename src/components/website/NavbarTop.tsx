@@ -14,7 +14,7 @@ const FontAwesomeIcon = dynamic(() => import('@fortawesome/react-fontawesome').t
 
 const NavbarTop = () => {
   return (
-    <div className="bg-primary text-white">
+    <div className="bg-primary text-black">
       <div className="flex flex-col lg:flex-row lg:justify-between container mx-auto text-sm py-3 px-4 gap-2">
         {companyInfo.email && (
           <span className="hidden lg:flex items-center gap-2">
@@ -35,22 +35,22 @@ const NavbarTop = () => {
         </div>
         <div className="flex gap-6 justify-center lg:justify-end">
           {companyInfo.social.facebook && (
-            <a href={companyInfo.social.facebook} target="_blank" rel="noopener noreferrer">
+            <a href={companyInfo.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FontAwesomeIcon icon={faFacebookF} className="h-4 w-4" />
             </a>
           )}
           {companyInfo.social.instagram && (
-            <a href={companyInfo.social.instagram} target="_blank" rel="noopener noreferrer">
+            <a href={companyInfo.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FontAwesomeIcon icon={faInstagram} className="h-4 w-4" />
             </a>
           )}
           {companyInfo.social.youtube && (
-            <a href={companyInfo.social.youtube} target="_blank" rel="noopener noreferrer">
+            <a href={companyInfo.social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <FontAwesomeIcon icon={faYoutube} className="h-4 w-4" />
             </a>
           )}
           {companyInfo.social.twitter && (
-            <a href={companyInfo.social.twitter} target="_blank" rel="noopener noreferrer">
+            <a href={companyInfo.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
               <FontAwesomeIcon icon={faXTwitter} className="h-4 w-4" />
             </a>
           )}

@@ -33,6 +33,7 @@ const Hero = memo(function Hero() {
               href={companyInfo.social?.facebook ?? ''}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook"
             >
               <FontAwesomeIcon icon={faFacebookF} className="h-4 w-4 text-[#1877F2]" />
             </Link>
@@ -41,6 +42,7 @@ const Hero = memo(function Hero() {
               href={companyInfo.social?.instagram ?? ''}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
             >
               <FontAwesomeIcon icon={faInstagram} className="h-4 w-4 text-[#E1306C]" />
             </Link>

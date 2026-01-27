@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { buttonVariants } from '@/components/ui/button';
 
-import { companyInfo } from '@/lib/companyInfo';
+import { locations } from '@/lib/locations';
 
 const CareCredit = memo(() => {
   return (
@@ -17,7 +17,7 @@ const CareCredit = memo(() => {
         reimbursement for covered procedures.
       </p>
       <Image src="/logos/carecredit.webp" alt="Care Credit" width={300} height={200} />
-      <Link className={buttonVariants({ size: 'lg', className: 'mt-10' })} href={`tel:${companyInfo.phone}`}>
+      <Link className={buttonVariants({ size: 'lg', className: 'mt-10' })} href={`tel:${locations[0].phone}`}>
         Call Us
       </Link>
     </div>

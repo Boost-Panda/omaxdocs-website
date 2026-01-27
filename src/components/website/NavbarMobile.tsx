@@ -12,7 +12,7 @@ const NavbarMobile = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon" className="shrink-0 lg:hidden">
+        <Button variant="outline" size="icon" className="shrink-0 lg:hidden" aria-label="Open menu">
           <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>

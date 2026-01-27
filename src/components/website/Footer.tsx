@@ -64,22 +64,22 @@ const Footer = memo(function Footer() {
             <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
             <div className="flex items-center justify-start gap-10 my-6">
               {companyInfo.social.facebook && (
-                <a href={companyInfo.social.facebook} className="flex items-center gap-2">
+                <a href={companyInfo.social.facebook} className="flex items-center gap-2" aria-label="Facebook">
                   <FontAwesomeIcon icon={faFacebookF} className="h-6 w-6 text-white" />
                 </a>
               )}
               {companyInfo.social.instagram && (
-                <a href={companyInfo.social.instagram} className="flex items-center gap-2">
+                <a href={companyInfo.social.instagram} className="flex items-center gap-2" aria-label="Instagram">
                   <FontAwesomeIcon icon={faInstagram} className="h-6 w-6 text-white" />
                 </a>
               )}
               {companyInfo.social.youtube && (
-                <a href={companyInfo.social.youtube} className="flex items-center gap-2">
+                <a href={companyInfo.social.youtube} className="flex items-center gap-2" aria-label="YouTube">
                   <FontAwesomeIcon icon={faYoutube} className="h-6 w-6 text-white" />
                 </a>
               )}
               {companyInfo.social.twitter && (
-                <a href={companyInfo.social.twitter} className="flex items-center gap-2">
+                <a href={companyInfo.social.twitter} className="flex items-center gap-2" aria-label="X (Twitter)">
                   <FontAwesomeIcon icon={faXTwitter} className="h-6 w-6 text-white" />
                 </a>
               )}

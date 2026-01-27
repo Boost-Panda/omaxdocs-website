@@ -9,6 +9,7 @@ const Contact = memo(function Contact() {
         width="100%"
         className="h-[60rem] lg:h-[44rem]"
         id="myIframe"
+        title="Contact form"
       ></iframe>
     </div>
   );

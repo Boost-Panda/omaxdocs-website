@@ -26,6 +26,7 @@ const Locations = memo(() => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="rounded-t-lg"
+                  title={`Map of ${location.name} location`}
                 ></iframe>
                 <CardTitle>
                   <div className="text-xl font-bold p-6 pb-2">{location.name}</div>
