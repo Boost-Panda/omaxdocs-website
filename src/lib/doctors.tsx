@@ -100,7 +100,7 @@ export const doctors: Doctor[] = [
   {
     slug: 'dr-khan',
     name: 'Sohaib F. Khan',
-    image: '/doctors/Dr. Khan.jpeg',
+    image: '/doctors/dr-khan.webp',
     title: 'DDS, MS',
     about: (
       <>

@@ -26,6 +26,9 @@ export default function RootLayout({
       <head>
         <title>Associated Oral & Maxillofacial Surgeons</title>
         <meta name="description" content="Excellence in Oral & Maxillofacial Surgery" />
+        <link rel="preconnect" href="https://hala-form.vercel.app" />
+        <link rel="preconnect" href="https://pandy-chatbot-widget.boostpanda.ai" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <Script id="google-analytics-src" async src="https://www.googletagmanager.com/gtag/js?id=G-KNKRSQ0L48"></Script>
         <Script id="google-analytics-script">
           {`window.dataLayer = window.dataLayer || [];
