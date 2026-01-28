@@ -31,7 +31,7 @@ const Navbar = () => {
           <NavbarDesktop />
         </div>
         <Link href="/" className="lg:hidden">
-          <Image src="/logos/logo.webp" alt="logo" width={60} height={60} loading="lazy" />
+          <Image src="/logos/logo.webp" alt="logo" width={60} height={57} loading="lazy" />
         </Link>
         <div className="ml-auto">
           <Button className="shrink-0">

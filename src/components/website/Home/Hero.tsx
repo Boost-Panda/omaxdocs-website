@@ -19,7 +19,7 @@ const Hero = memo(function Hero() {
     <>
       <div className="w-full py-8">
         <div className="flex flex-col items-center justify-center">
-          <Image src="/logos/logo.webp" alt="Logo" width={160} height={160} className="w-32 h-32 md:w-48 md:h-48" priority />
+          <Image src="/logos/logo.webp" alt="Logo" width={160} height={151} className="w-32 md:w-48" priority />
           <h1 className="text-4xl font-bold max-w-3xl text-center leading-snug mt-4">
             Experience the Artistry of Oral & Maxillofacial Excellence
           </h1>

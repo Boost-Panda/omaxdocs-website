@@ -49,7 +49,7 @@ const NavbarDesktop = () => {
       <NavigationMenuList className="flex gap-6 text-sm font-medium items-center">
         <NavigationMenuItem>
           <Link href="/">
-            <Image src="/logos/logo.webp" alt={companyInfo.name} width={60} height={60} />
+            <Image src="/logos/logo.webp" alt={companyInfo.name} width={60} height={57} />
             <span className="sr-only">{companyInfo.name}</span>
           </Link>
         </NavigationMenuItem>
