@@ -22,7 +22,7 @@ export const locations: Location[] = [
       sunday: 'Closed'
     },
     timezone: 'EST',
-    registrationForm: 'https://hala-form.vercel.app/?formId=4FBl2hAJnGkcnCUysOdd',
+    registrationForm: 'https://csintake.patientengagepro.com/new/kvx1fw',
     referralForm: 'https://hala-form.vercel.app/?formId=nsqRS8IP9j98CWQUwfpS',
   },
   {
@@ -46,7 +46,7 @@ export const locations: Location[] = [
       sunday: 'Closed'
     },
     timezone: 'EST',
-    registrationForm: 'https://hala-form.vercel.app/?formId=3AeQeaHPQmXvT7DHlfw0',
+    registrationForm: 'https://csintake.patientengagepro.com/new/ypzxzj',
     referralForm: 'https://hala-form.vercel.app/?formId=TX713jB8K4yICxf9h2vn',
   },
   {
@@ -70,7 +70,7 @@ export const locations: Location[] = [
       sunday: 'Closed'
     },
     timezone: 'EST',
-    registrationForm: 'https://hala-form.vercel.app/?formId=mZH0V5NAj5PtnJOm669G',
+    registrationForm: 'https://csintake.patientengagepro.com/new/txlkt2',
     referralForm: 'https://hala-form.vercel.app/?formId=nyOfrhFmRgbQsSjcfc56',
   },
 ];
