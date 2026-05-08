@@ -98,9 +98,21 @@ const Footer = memo(function Footer() {
           </div>
         </div>
         <hr className="my-12 border-white/30" />
-        <p className="text-sm text-white/70">
-          Copyright &copy; {new Date().getFullYear()} {companyInfo.name}. All rights reserved.
-        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/70">
+          <p>
+            Copyright &copy; {new Date().getFullYear()} {companyInfo.name}. All rights reserved.
+          </p>
+          <a
+            href="https://boostpanda.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-white/50 hover:text-white transition-colors"
+          >
+            <span>Powered by</span>
+            <Image src="/bp-logo.svg" alt="BoostPanda" width={20} height={20} />
+            <span className="font-semibold">BoostPanda</span>
+          </a>
+        </div>
       </div>
     </footer>
   );
