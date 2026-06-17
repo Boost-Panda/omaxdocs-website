@@ -38,10 +38,8 @@ const FinancialPolicy = () => {
           seamless operations and deliver quality healthcare services without interruptions.
         </p>
         <p className="mb-12">
-          In case you anticipate difficulties in settling the remaining balance upfront, please remember that
-          arrangements for a monthly payment plan can be made. However, it must be implemented prior to scheduling the
-          actual procedure through open dialogue with our team of financial experts, who are more than willing to guide
-          you through this process efficiently and effectively.
+          If you have questions about your financial responsibility, please contact our office before your
+          appointment. Our team is happy to review your account and provide clarification.
         </p>
         <Locations />
       </div>
