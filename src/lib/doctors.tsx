@@ -130,4 +130,41 @@ export const doctors: Doctor[] = [
       </>
     ),
   },
+  {
+    slug: 'dr-crayton',
+    name: 'Marcus Allen Crayton',
+    image: '/doctors/dr-crayton.webp',
+    title: 'DDS, MHS',
+    about: (
+      <>
+        <p>
+          Dr. Marcus Allen Crayton is an Oral and Maxillofacial Surgeon dedicated to providing exceptional surgical
+          care with compassion, precision, and a patient-centered approach. Originally from Chicago, Illinois, Dr.
+          Crayton earned his Bachelor of Arts in Biology from Fisk University before completing both his Master of
+          Health Sciences and Doctor of Dental Surgery degrees at Meharry Medical College. In recognition of his
+          academic achievements, he was inducted into Omicron Kappa Upsilon (OKU), the national dental honor society.
+        </p>
+        <p>
+          Dr. Crayton completed his residency training in Oral and Maxillofacial Surgery at Howard University Hospital
+          in Washington, D.C., where he served as Chief Resident. During his training, he gained extensive experience
+          in wisdom tooth removal, dental implants, bone grafting, facial trauma, corrective jaw surgery, pathology,
+          and office-based anesthesia.
+        </p>
+        <p>
+          Committed to advancing the specialty, Dr. Crayton has participated in clinical research and has presented his
+          work at both regional and national oral and maxillofacial surgery meetings. His dedication to lifelong
+          learning allows him to provide evidence-based care utilizing the latest surgical techniques and technologies.
+        </p>
+        <p>
+          Dr. Crayton joined Associated Oral & Maxillofacial Surgeons following residency and is proud to serve
+          patients throughout Maryland and West Virginia. He strives to ensure every patient feels informed, comfortable,
+          and confident throughout their surgical experience.
+        </p>
+        <p>
+          Outside of the office, Dr. Crayton enjoys cycling, traveling, spending time with family and friends, and
+          supporting Chicago sports teams.
+        </p>
+      </>
+    ),
+  },
 ];
