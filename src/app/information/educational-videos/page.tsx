@@ -1,5 +1,10 @@
+import Link from 'next/link';
+
 import Layout from '@/components/website/Layout';
 import Locations from '@/components/website/Locations';
+
+import { buttonVariants } from '@/components/ui/button';
+import { Card, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
 import { videos } from '@/lib/videos';
 
@@ -11,23 +16,26 @@ const EducationalVideos = () => {
         <h2 className="text-2xl font-bold mb-4">Informed Consent Presentations</h2>
         <p className="mb-12">
           Our oral surgery videos are designed to enhance your understanding of the various oral surgery procedures we
-          offer. Simply click on the image and select a specific video that piques your interest, allowing you to delve
-          deeper into our comprehensive collection.
+          offer. Simply select a specific video that piques your interest, allowing you to delve deeper into our comprehensive collection.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
           {videos.map((video) => (
-            <div className="aspect-video" key={video.title}>
-              <iframe
-                className="min-w-full min-h-full"
-                src={video.url}
-                title="YouTube video player"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-              <h4 className="font-bold">{video.title}</h4>
-            </div>
+            <Card key={video.title} className="flex flex-col justify-between">
+              <CardHeader>
+                <CardTitle>{video.title}</CardTitle>
+              </CardHeader>
+              <CardFooter>
+                <Link
+                  className={buttonVariants({ variant: 'secondary', className: 'w-full !font-bold' })}
+                  href={video.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Watch on YouTube
+                </Link>
+              </CardFooter>
+            </Card>
           ))}
         </div>
 

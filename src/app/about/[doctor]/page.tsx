@@ -9,8 +9,9 @@ import { buttonVariants } from '@/components/ui/button';
 import { companyInfo } from '@/lib/companyInfo';
 import { doctors } from '@/lib/doctors';
 
-const DoctorPage = ({ params }: { params: { doctor: string } }) => {
-  const doctor = doctors.find((doctor) => doctor.slug === params.doctor);
+const DoctorPage = async ({ params }: { params: Promise<{ doctor: string }> }) => {
+  const { doctor: slug } = await params;
+  const doctor = doctors.find((doctor) => doctor.slug === slug);
   return (
     <Layout>
       <div className="container mx-auto px-8 py-16">

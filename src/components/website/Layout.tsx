@@ -1,10 +1,7 @@
 import { Suspense } from 'react';
-import dynamic from 'next/dynamic';
 
+import { Footer } from '@/components/website/DynamicImports';
 import Navbar from '@/components/website/Navbar';
-const Footer = dynamic(() => import('@/components/website/Footer'), {
-  ssr: false,
-});
 
 const LoadingFallback = () => <div className="loading-skeleton">Loading...</div>;
 

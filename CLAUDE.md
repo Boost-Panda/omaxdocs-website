@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Next.js 14 (App Router) website built by **Hala** for their client **Associated Oral & Maxillofacial Surgeons (AOMS)** - an oral & maxillofacial surgery practice. The site uses TypeScript, Tailwind CSS, and shadcn/ui components.
+This is a Next.js 16 (App Router) website built by **Hala** for their client **Associated Oral & Maxillofacial Surgeons (AOMS)** - an oral & maxillofacial surgery practice. The site uses TypeScript, Tailwind CSS, and shadcn/ui components.
 
 ## Development Commands
 
@@ -15,9 +15,6 @@ npm run dev
 # Build production version
 npm run build
 
-# Start production server
-npm start
-
 # Lint code
 npm run lint
 ```
@@ -25,7 +22,7 @@ npm run lint
 ## Architecture
 
 ### Framework & Routing
-- **Next.js 14 App Router**: Uses the `src/app/` directory structure
+- **Next.js 16 App Router**: Uses the `src/app/` directory structure
 - **MDX Support**: Configured to render `.mdx` files as pages, particularly for service pages
 - **TypeScript**: Strict TypeScript configuration
 
@@ -43,8 +40,7 @@ src/
 │   └── website/          # Custom website components
 │       ├── Home/         # Homepage-specific components
 │       ├── Navbar*       # Navigation components (desktop/mobile)
-│       ├── Footer.tsx    # Site footer
-│       └── Chat.tsx      # Chat widget integration
+│       └── Footer.tsx    # Site footer
 └── lib/                  # Data and utilities
     ├── types.ts          # TypeScript type definitions
     ├── locations.ts      # Practice locations data
@@ -66,8 +62,7 @@ src/
 - **Doctor Profiles**: Dynamic routing at `/about/[doctor]`
 
 ### Special Features
-- **Chat Widget**: Pandy Bot integration via iframe with responsive behavior
-- **Google Analytics**: Configured with GTM tag
+- **Static Export**: `next build` writes the whole site to `out/`, served as plain files by Caddy. No server features, no third-party scripts or embeds
 - **MDX Content**: Service pages written in MDX for rich content
 - **Dynamic Routes**: Doctor profile pages using Next.js dynamic routing
 
@@ -77,11 +72,6 @@ src/
 - **Patient Forms**: Registration and referral forms integration
 - **Responsive Design**: Mobile-first approach with desktop/mobile nav variants
 
-## Environment Variables
-- `NEXT_PUBLIC_PANDY_ORG_ID`: Required for chat widget functionality
-
 ## Important Notes
-- The `params` parameter in API routes is a Promise (Next.js 14 App Router requirement)
-- Chat widget includes mobile scroll lock functionality
 - Site title: "Associated Oral & Maxillofacial Surgeons"
 - Uses Geist font family (local fonts included)

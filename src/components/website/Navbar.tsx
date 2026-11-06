@@ -1,25 +1,11 @@
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 
+import { NavbarDesktop, NavbarMobile, NavbarTop } from '@/components/website/DynamicImports';
+
 import { companyInfo } from '@/lib/companyInfo';
-
-const NavbarTop = dynamic(() => import('@/components/website/NavbarTop'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false,
-});
-
-const NavbarDesktop = dynamic(() => import('./NavbarDesktop'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false,
-});
-
-const NavbarMobile = dynamic(() => import('./NavbarMobile'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false,
-});
 
 const Navbar = () => {
   return (
