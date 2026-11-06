@@ -1,13 +1,8 @@
 import { Suspense } from 'react';
-import dynamic from 'next/dynamic';
 
+import { ClientSideComponents } from '@/components/website/DynamicImports';
 import Layout from '@/components/website/Layout';
 import Hero from '@/components/website/Home/Hero';
-// import Intro from '@/components/website/Home/Intro';
-
-const ClientSideComponents = dynamic(() => import('@/components/website/Home/ClientSideComponents'), {
-  ssr: false,
-});
 
 const LoadingFallback = () => <div className="loading-skeleton">Loading...</div>;
 

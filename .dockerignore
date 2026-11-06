@@ -1,0 +1,9 @@
+.env*
+.git
+.github
+.next
+Dockerfile
+.dockerignore
+node_modules
+out
+*.md

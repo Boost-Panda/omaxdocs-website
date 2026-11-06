@@ -1,18 +1,13 @@
-import dynamic from 'next/dynamic';
 import { memo } from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { buttonVariants } from '@/components/ui/button';
+import { FontAwesomeIcon } from '@/components/website/DynamicImports';
 
 import { companyInfo } from '@/lib/companyInfo';
 
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
-const FontAwesomeIcon = dynamic(() => import('@fortawesome/react-fontawesome').then((mod) => mod.FontAwesomeIcon), {
-  loading: () => <div className="w-4 h-4 bg-primary animate-pulse"></div>,
-  ssr: false,
-});
 
 const Hero = memo(function Hero() {
   return (

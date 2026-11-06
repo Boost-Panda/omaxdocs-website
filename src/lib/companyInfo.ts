@@ -9,8 +9,8 @@ export const companyInfo: CompanyInfo = {
   },
   mainCTA: {
     name: 'Request Appointment',
-    href: 'https://hala-form.vercel.app/?formId=AxkM09vOM8e3UMscDeVk',
+    href: 'https://forms.omaxdocs.com/?formId=AxkM09vOM8e3UMscDeVk',
   },
-  contactForm: 'https://hala-form.vercel.app/?formId=6l1YEcwAm0YzBS8wGON8',
-  requestAppointmentForm: 'https://hala-form.vercel.app/?formId=AxkM09vOM8e3UMscDeVk',
+  contactForm: 'https://forms.omaxdocs.com/?formId=6l1YEcwAm0YzBS8wGON8',
+  requestAppointmentForm: 'https://forms.omaxdocs.com/?formId=AxkM09vOM8e3UMscDeVk',
 };

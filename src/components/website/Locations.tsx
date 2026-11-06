@@ -18,16 +18,6 @@ const Locations = memo(() => {
           <div key={location.name} className="w-full md:w-1/2 lg:w-1/3 p-2">
             <Card>
               <CardHeader className="p-0">
-                <iframe
-                  src={location.mapEmbed}
-                  width="100%"
-                  height="300"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded-t-lg"
-                  title={`Map of ${location.name} location`}
-                ></iframe>
                 <CardTitle>
                   <div className="text-xl font-bold p-6 pb-2">{location.name}</div>
                 </CardTitle>
@@ -51,6 +41,14 @@ const Locations = memo(() => {
                       <td className="py-1">
                         <a href={`mailto:${location.email}`} className="text-blue-700">
                           {location.email}
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 font-bold">Map:</td>
+                      <td className="py-1">
+                        <a href={location.mapLink} target="_blank" rel="noopener noreferrer" className="text-blue-700">
+                          View on Google Maps
                         </a>
                       </td>
                     </tr>
