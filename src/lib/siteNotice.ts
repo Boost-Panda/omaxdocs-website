@@ -1,7 +1,7 @@
 // Site-wide notice shown as a dialog on first page load.
 // Set `enabled` to false (and redeploy) to take it down.
 export const siteNotice = {
-  enabled: true,
+  enabled: false,
   // Change the id whenever the notice text changes, so visitors who
   // dismissed an earlier notice see the new one.
   id: 'phone-outage-2026-11-17',
